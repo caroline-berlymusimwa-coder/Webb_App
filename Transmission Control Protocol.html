@@ -7,6 +7,7 @@
      <link rel="stylesheet" href="css/design.css">
 </head>
 <body>
+     <div class="topnav">
     <a href="homePage.html">Home</a>&#65372;
     <a href="world wide web.html">World Wide Web</a>&#65372;
     <a href="Transmission Control Protocol.html">TCP/IP</a>&#65372;
@@ -25,11 +26,12 @@
     <a href="web 2.0.html">Web 2.0</a>&#65372;
     <a href="web 3.0.html">Web 3.0</a>&#65372;
     <a href="web 4.0.html">Web 4.0</a>
+     </div>
     <h1>Transmission Control Protocol/Internet Protocol (TCP/IP)</h1>
     <p>TCP/IP is the de facto standard protocol suite for internet communications, layering IP for logical addressing and routing with TCP for reliable, ordered data transport.</p>
 
     <h2>How It Works in Detail</h2>
-    <p>Data originates at the application layer (e.g., HTTP payload). TCP segments it into packets, adding headers with sequence numbers, ports, checksums, and flags (SYN, ACK, FIN). The three-way handshake establishes connections: 
+    <p style="text-align:justify;"><img src="pictureWAD/tcp ip.jpeg" alt="tcp ip" width="400" height="300"style="float: left; margin-right: 10px;">Data originates at the application layer (e.g., HTTP payload). TCP segments it into packets, adding headers with sequence numbers, ports, checksums, and flags (SYN, ACK, FIN). The three-way handshake establishes connections: 
     <p>client SYN → server SYN-ACK → client ACK. </p>   
     <P>Packets traverse IP networks, where routers forward based on destination IP, handling fragmentation/reassembly. TCP ensures reliability via acknowledgments (ACKs), timeouts for retransmissions, flow control (sliding window), and congestion avoidance (slow-start, congestion avoidance, fast retransmit). UDP variant skips reliability for speed (e.g., video streaming). IPv6 uses 128-bit addresses (e.g., 2001:db8::1) versus IPv4's 32-bit.</p>
 
