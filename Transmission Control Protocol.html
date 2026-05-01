@@ -8,33 +8,35 @@
 </head>
 <body>
      <div class="topnav">
-    <a href="homePage.html">Home</a>&#65372;
-    <a href="world wide web.html">World Wide Web</a>&#65372;
-    <a href="Transmission Control Protocol.html">TCP/IP</a>&#65372;
-    <a href="Internet Protocol.html">Internet Protocol</a>&#65372;
-    <a href="web browsers.html">Web Browsers</a>&#65372;
-    <a href="web servers.html">Web Servers</a>&#65372;
-    <a href="Uniform Ressource locator.html">URL</a>&#65372;
-    <a href="domain name server.html">DNS</a>&#65372;
-    <a href="Hyper Text Transfer Protocol.html">HTTP</a>&#65372;
-    <a href="File Transfer Protocol.html">FTP</a>&#65372;
-    <a href="Hyper Text Mark-up.html">HTML</a>&#65372;
-    <a href="intranet.html">Intranet</a>&#65372;
-    <a href="Extranet.html">Extranet</a>&#65372;
-    <a href="Multitier architecture.html">Multitier</a>&#65372;
-    <a href="Web 1.0.html">Web 1.0</a>&#65372;
-    <a href="web 2.0.html">Web 2.0</a>&#65372;
-    <a href="web 3.0.html">Web 3.0</a>&#65372;
+        <a href="homePage.html">Home</a>
+    <a href="world wide web.html">World Wide Web</a>
+    <a href="Transmission Control Protocol.html">TCP/IP</a>
+    <a href="Internet Protocol.html">Internet Protocol</a>
+    <a href="web browsers.html">Web Browsers</a>
+    <a href="web servers.html">Web Servers</a>
+    <a href="Uniform Ressource locator.html">URL</a>
+    <a href="domain name server.html">DNS</a>
+    <a href="Hyper Text Transfer Protocol.html">HTTP</a>
+    <a href="File Transfer Protocol.html">FTP</a>
+    <a href="Hyper Text Mark-up.html">HTML</a>
+    <a href="intranet.html">Intranet</a>
+    <a href="Extranet.html">Extranet</a>
+    <a href="Multitier architecture.html">Multitier</a>
+    <a href="Web 1.0.html">Web 1.0</a>
+    <a href="web 2.0.html">Web 2.0</a>
+    <a href="web 3.0.html">Web 3.0</a>
     <a href="web 4.0.html">Web 4.0</a>
+    
      </div>
     <h1>Transmission Control Protocol/Internet Protocol (TCP/IP)</h1>
     <p>TCP/IP is the de facto standard protocol suite for internet communications, layering IP for logical addressing and routing with TCP for reliable, ordered data transport.</p>
 
     <h2>How It Works in Detail</h2>
     <p style="text-align:justify;"><img src="pictureWAD/tcp ip.jpeg" alt="tcp ip" width="400" height="300"style="float: left; margin-right: 10px;">Data originates at the application layer (e.g., HTTP payload). TCP segments it into packets, adding headers with sequence numbers, ports, checksums, and flags (SYN, ACK, FIN). The three-way handshake establishes connections: 
-    <p>client SYN → server SYN-ACK → client ACK. </p>   
+    <p><span class="highlight">client SYN → server SYN-ACK → client ACK. </span></p>   
     <P>Packets traverse IP networks, where routers forward based on destination IP, handling fragmentation/reassembly. TCP ensures reliability via acknowledgments (ACKs), timeouts for retransmissions, flow control (sliding window), and congestion avoidance (slow-start, congestion avoidance, fast retransmit). UDP variant skips reliability for speed (e.g., video streaming). IPv6 uses 128-bit addresses (e.g., 2001:db8::1) versus IPv4's 32-bit.</p>
-
+<br>
+<hr>
     <h2>Protocol Layers (TCP/IP Model)</h2>
     <ol type="1" start="1">
         <li>Application: HTTP, FTP, SMTP.</li>
@@ -44,10 +46,12 @@
         Ports (0-65535) demultiplex: well-known (e.g., 80 HTTP), ephemeral for clients.
         </li>
     </ol>
-
+<br>
+<hr>
     <h2>Historical Context and Standards</h2>
     <p>Developed 1974 by Vint Cerf and Bob Kahn for ARPANET; TCP/IPv4 standardized in RFC 791 (1981). IPv6 (RFC 8200, 1998) combats exhaustion (4.3 billion addresses used).</p> <p>Adopted universally post-1983 "flag day." Wireshark tools dissect packets for debugging.</p>
-
+<br>
+<hr>
     <h2>Advantages, Use Cases, and Limitations</h2>
     <p>Advantages, Use Cases, and Limitations
     Reliable for web, email; scales to billions of devices. Drawbacks: latency from handshakes (QUIC mitigates), head-of-line blocking (HTTP/3 solves). Used in IoT, 5G, satellite links. Security via IPsec VPNs.</p>
