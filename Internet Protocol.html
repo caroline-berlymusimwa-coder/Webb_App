@@ -24,6 +24,32 @@
     <a href="web 2.0.html">Web 2.0</a>&#65372;
     <a href="web 3.0.html">Web 3.0</a>&#65372;
     <a href="web 4.0.html">Web 4.0</a>
-    
+    <h1>Internet Protocol</h1>
+    <p>The Internet Protocol (IP) is the network layer protocol in the TCP/IP suite responsible for logical addressing, routing, and packet delivery across interconnected networks. It defines how data is packaged into datagrams, addressed with source/destination IPs, and routed hop-by-hop through the global internet.</p>
+    <h2>What IP Actually Does</h2>
+    <ul type="circle">
+        <li>Addressing&#8594 Assigns unique 32-bit (IPv4) / 128-bit (IPv6) identifiers to every device</li>
+        <li>Packetization&#8594 Encapsulates application data into IP datagrams </li>
+        <li>Routing&#8594Forwards packets between networks using IP addresses</li>
+        <li>Fragmentation&#8594Breaks large packets to fit network MTU limits</li>
+        <li>Delivery&#8594Best-effort (unreliable) datagram service</li>
+        
+    </ul>
+    <h2>How IP Works - Complete Packet Flow</h2>
+    <p>[App Data] &#8594TCP/UDP Segment &#8594IP Datagram  &#8594Ethernet Frame &#8594 Wire</p>
+    <h2>Features</h2>
+    <ul type="circle">
+        <li>Connectionless - No handshakes/sessions</li>
+        <li>Best Effort - No delivery guarantees (TCP provides reliability)</li>
+        <li>Unordered - Packets may arrive out of sequence</li>
+        <li>Global Addressing - Works across any network type</li>
+    </ul>
+    <h2>Limitations</h2>
+    <ul type="circle">
+        <li>Unreliable - Drops packets silently
+        <li>IPv4 Exhaustion - 4.3B addresses insufficient</li>
+        <li>No Security - IPsec required for encryption</li>
+        <li>No Flow Control - Handled by transport layer</li>
+    </ul>
 </body>
 </html>

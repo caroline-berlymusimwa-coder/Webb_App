@@ -24,6 +24,30 @@
     <a href="web 2.0.html">Web 2.0</a>&#65372;
     <a href="web 3.0.html">Web 3.0</a>&#65372;
     <a href="web 4.0.html">Web 4.0</a>
+    <h1>Domain Main Server</h1>
+    <p>DNS is a hierarchical, distributed database system that translates human-readable domain names (e.g., example.com) into machine-readable IP addresses, essential for internet navigation.</p>
+
+    <h2>How It Works</h2>
+    <p>Queries flow recursively (stub resolver forwards to recursive resolver, then root → TLD → authoritative) or iteratively (step-by-step). EDNS expands UDP payloads beyond 512 bytes for larger responses. Caching uses TTL to reduce latency.</p>
+
+    <h2>Record Types</h2>
+<ul type="circle">
+    <li>A/AAAA: IPv4/IPv6 addresses.</li>
+    <li>CNAME: Aliases (e.g., www → example.com).</li>
+    <li>MX: Mail servers.</li>
+    <li>TXT: SPF/DKIM/DMARC for email security</li>
+    <li>SRV: Service locations.</li>
+    <li>CAA: Cert authority restrictions.</li>
+
+</ul>
+
+
+    <h2>Threats and Mitigations</h2>
+    <p>Cache poisoning (Kaminsky attack) forged by spoofing; mitigated by DNSSEC (cryptographic signatures chaining from root). DoS via amplification (BGP anycast distributes load). DoH/DoT encrypt queries.</p>
+
+    <h2>Facts</h2>
+    <p>Over 1,500 TLDs (ICANN-managed); 13 root server clusters (1,000+ instances)</p>
+
     
 </body>
 </html>

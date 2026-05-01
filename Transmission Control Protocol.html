@@ -24,5 +24,30 @@
     <a href="web 2.0.html">Web 2.0</a>&#65372;
     <a href="web 3.0.html">Web 3.0</a>&#65372;
     <a href="web 4.0.html">Web 4.0</a>
+    <h1>Transmission Control Protocol/Internet Protocol (TCP/IP)</h1>
+    <p>TCP/IP is the de facto standard protocol suite for internet communications, layering IP for logical addressing and routing with TCP for reliable, ordered data transport.</p>
+
+    <h2>How It Works in Detail</h2>
+    <p>Data originates at the application layer (e.g., HTTP payload). TCP segments it into packets, adding headers with sequence numbers, ports, checksums, and flags (SYN, ACK, FIN). The three-way handshake establishes connections: 
+    <p>client SYN → server SYN-ACK → client ACK. </p>   
+    <P>Packets traverse IP networks, where routers forward based on destination IP, handling fragmentation/reassembly. TCP ensures reliability via acknowledgments (ACKs), timeouts for retransmissions, flow control (sliding window), and congestion avoidance (slow-start, congestion avoidance, fast retransmit). UDP variant skips reliability for speed (e.g., video streaming). IPv6 uses 128-bit addresses (e.g., 2001:db8::1) versus IPv4's 32-bit.</p>
+
+    <h2>Protocol Layers (TCP/IP Model)</h2>
+    <ol type="1" start="1">
+        <li>Application: HTTP, FTP, SMTP.</li>
+        <li>Transport: TCP (connection-oriented), UDP (connectionless).</li>
+        <li>Internet: IP, ICMP (ping), ARP (address resolution).</li>
+        <li>Link/Network Access: Ethernet, Wi-Fi frames.
+        Ports (0-65535) demultiplex: well-known (e.g., 80 HTTP), ephemeral for clients.
+        </li>
+    </ol>
+
+    <h2>Historical Context and Standards</h2>
+    <p>Developed 1974 by Vint Cerf and Bob Kahn for ARPANET; TCP/IPv4 standardized in RFC 791 (1981). IPv6 (RFC 8200, 1998) combats exhaustion (4.3 billion addresses used).</p> <p>Adopted universally post-1983 "flag day." Wireshark tools dissect packets for debugging.</p>
+
+    <h2>Advantages, Use Cases, and Limitations</h2>
+    <p>Advantages, Use Cases, and Limitations
+    Reliable for web, email; scales to billions of devices. Drawbacks: latency from handshakes (QUIC mitigates), head-of-line blocking (HTTP/3 solves). Used in IoT, 5G, satellite links. Security via IPsec VPNs.</p>
+
 </body>
 </html>
